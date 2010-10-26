@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <Extern href="stdidcmd.h"/>
+  <Extern href="vsshlids.h"/>
+  <Extern href="msobtnid.h"/>
+
+  <Commands package="guidSubmitToWTF2010Pkg">
+    <Groups>
+      <Group guid="guidSubmitToWTF2010CmdSet" id="MyMenuGroup" priority="0x0600">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_CODEWIN"/>
+      </Group>
+    </Groups>
+    
+    <Buttons>
+      <Button guid="guidSubmitToWTF2010CmdSet" id="SubmitWTF" priority="0x0100" type="Button">
+        <Parent guid="guidSubmitToWTF2010CmdSet" id="MyMenuGroup" />
+        <Icon guid="guidImages" id="bmpWtf" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <CommandName>SubmitWTF</CommandName>
+          <ButtonText>Submit to TDWTF...</ButtonText>
+        </Strings>
+      </Button>
+    </Buttons>
+   
+    <Bitmaps>
+      <Bitmap guid="guidImages" href="Resources\Images_32bit.bmp" usedList="bmpWtf"/>
+    </Bitmaps>
+  </Commands>
+
+  <Symbols>
+    <GuidSymbol name="guidSubmitToWTF2010Pkg" value="{e5516360-5f78-4b7f-af60-48826ef72f1d}" />
+    <GuidSymbol name="guidSubmitToWTF2010CmdSet" value="{4a4357f1-e92d-4b08-87d9-71dd35f685c0}">
+      <IDSymbol name="MyMenuGroup" value="0x1020" />
+      <IDSymbol name="SubmitWTF" value="0x0100" />
+    </GuidSymbol>
+    <GuidSymbol name="guidImages" value="{a6480cd6-01fb-4600-a736-99637d150a96}" >
+      <IDSymbol name="bmpWtf" value="1" />
+    </GuidSymbol>
+  </Symbols>
+
+</CommandTable>

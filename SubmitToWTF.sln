@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubmitToWTF", "SubmitToWTF\SubmitToWTF.csproj", "{5DE9B119-F728-469B-A4EC-7A9707668064}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubmitToWTF2010", "SubmitToWTF2010\SubmitToWTF2010.csproj", "{C02100C8-87E1-4FB8-A2E3-B8492E3370B7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{172C063B-4DE4-469F-A6DA-4A6755CA1C58}"
+	ProjectSection(SolutionItems) = preProject
+		Shared\SubmitForm.cs = Shared\SubmitForm.cs
+		Shared\SubmitForm.Designer.cs = Shared\SubmitForm.Designer.cs
+		Shared\SubmitForm.resx = Shared\SubmitForm.resx
+		Shared\Util.Shared.cs = Shared\Util.Shared.cs
+		Shared\WoodenTable.jpg = Shared\WoodenTable.jpg
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Win32 = Debug|Win32
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5DE9B119-F728-469B-A4EC-7A9707668064}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DE9B119-F728-469B-A4EC-7A9707668064}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DE9B119-F728-469B-A4EC-7A9707668064}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{5DE9B119-F728-469B-A4EC-7A9707668064}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{5DE9B119-F728-469B-A4EC-7A9707668064}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{5DE9B119-F728-469B-A4EC-7A9707668064}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DE9B119-F728-469B-A4EC-7A9707668064}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DE9B119-F728-469B-A4EC-7A9707668064}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{5DE9B119-F728-469B-A4EC-7A9707668064}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{5DE9B119-F728-469B-A4EC-7A9707668064}.Release|Win32.ActiveCfg = Release|Any CPU
+		{C02100C8-87E1-4FB8-A2E3-B8492E3370B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C02100C8-87E1-4FB8-A2E3-B8492E3370B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C02100C8-87E1-4FB8-A2E3-B8492E3370B7}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{C02100C8-87E1-4FB8-A2E3-B8492E3370B7}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{C02100C8-87E1-4FB8-A2E3-B8492E3370B7}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{C02100C8-87E1-4FB8-A2E3-B8492E3370B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C02100C8-87E1-4FB8-A2E3-B8492E3370B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C02100C8-87E1-4FB8-A2E3-B8492E3370B7}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{C02100C8-87E1-4FB8-A2E3-B8492E3370B7}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{C02100C8-87E1-4FB8-A2E3-B8492E3370B7}.Release|Win32.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

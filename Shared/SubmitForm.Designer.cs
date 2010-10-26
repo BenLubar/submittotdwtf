@@ -36,6 +36,7 @@
             System.Windows.Forms.SplitContainer splitContainer1;
             System.Windows.Forms.Label lblDoNotPublish;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SubmitForm));
+            System.Windows.Forms.LinkLabel lnkCurio;
             this.txtMessage = new System.Windows.Forms.TextBox();
             this.txtCode = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
@@ -52,6 +53,7 @@
             lblCode = new System.Windows.Forms.Label();
             splitContainer1 = new System.Windows.Forms.SplitContainer();
             lblDoNotPublish = new System.Windows.Forms.Label();
+            lnkCurio = new System.Windows.Forms.LinkLabel();
             splitContainer1.Panel1.SuspendLayout();
             splitContainer1.Panel2.SuspendLayout();
             splitContainer1.SuspendLayout();
@@ -61,7 +63,7 @@
             // 
             lblName.AutoSize = true;
             lblName.BackColor = System.Drawing.Color.Transparent;
-            lblName.Location = new System.Drawing.Point(50, 43);
+            lblName.Location = new System.Drawing.Point(50, 60);
             lblName.Name = "lblName";
             lblName.Size = new System.Drawing.Size(63, 13);
             lblName.TabIndex = 0;
@@ -71,7 +73,7 @@
             // 
             lblEmail.AutoSize = true;
             lblEmail.BackColor = System.Drawing.Color.Transparent;
-            lblEmail.Location = new System.Drawing.Point(53, 69);
+            lblEmail.Location = new System.Drawing.Point(53, 86);
             lblEmail.Name = "lblEmail";
             lblEmail.Size = new System.Drawing.Size(60, 13);
             lblEmail.TabIndex = 2;
@@ -81,7 +83,7 @@
             // 
             lblSubject.AutoSize = true;
             lblSubject.BackColor = System.Drawing.Color.Transparent;
-            lblSubject.Location = new System.Drawing.Point(66, 96);
+            lblSubject.Location = new System.Drawing.Point(66, 113);
             lblSubject.Name = "lblSubject";
             lblSubject.Size = new System.Drawing.Size(47, 13);
             lblSubject.TabIndex = 4;
@@ -111,7 +113,7 @@
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
             splitContainer1.BackColor = System.Drawing.Color.Transparent;
-            splitContainer1.Location = new System.Drawing.Point(49, 120);
+            splitContainer1.Location = new System.Drawing.Point(49, 144);
             splitContainer1.Name = "splitContainer1";
             splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -125,8 +127,8 @@
             // 
             splitContainer1.Panel2.Controls.Add(lblCode);
             splitContainer1.Panel2.Controls.Add(this.txtCode);
-            splitContainer1.Size = new System.Drawing.Size(503, 316);
-            splitContainer1.SplitterDistance = 157;
+            splitContainer1.Size = new System.Drawing.Size(503, 351);
+            splitContainer1.SplitterDistance = 174;
             splitContainer1.TabIndex = 6;
             // 
             // txtMessage
@@ -139,7 +141,7 @@
             this.txtMessage.Multiline = true;
             this.txtMessage.Name = "txtMessage";
             this.txtMessage.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtMessage.Size = new System.Drawing.Size(503, 138);
+            this.txtMessage.Size = new System.Drawing.Size(503, 155);
             this.txtMessage.TabIndex = 1;
             // 
             // txtCode
@@ -153,16 +155,28 @@
             this.txtCode.Multiline = true;
             this.txtCode.Name = "txtCode";
             this.txtCode.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtCode.Size = new System.Drawing.Size(506, 138);
+            this.txtCode.Size = new System.Drawing.Size(506, 156);
             this.txtCode.TabIndex = 1;
             this.txtCode.WordWrap = false;
             this.txtCode.TextChanged += new System.EventHandler(this.TextBox_TextChanged);
+            // 
+            // lblDoNotPublish
+            // 
+            lblDoNotPublish.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            lblDoNotPublish.BackColor = System.Drawing.Color.Transparent;
+            lblDoNotPublish.Font = new System.Drawing.Font("Tahoma", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            lblDoNotPublish.Location = new System.Drawing.Point(66, 516);
+            lblDoNotPublish.Name = "lblDoNotPublish";
+            lblDoNotPublish.Size = new System.Drawing.Size(310, 39);
+            lblDoNotPublish.TabIndex = 9;
+            lblDoNotPublish.Text = resources.GetString("lblDoNotPublish.Text");
             // 
             // txtName
             // 
             this.txtName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtName.Location = new System.Drawing.Point(119, 40);
+            this.txtName.Location = new System.Drawing.Point(119, 57);
             this.txtName.MaxLength = 100;
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(433, 21);
@@ -173,7 +187,7 @@
             // 
             this.txtEmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtEmail.Location = new System.Drawing.Point(119, 66);
+            this.txtEmail.Location = new System.Drawing.Point(119, 83);
             this.txtEmail.MaxLength = 100;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(433, 21);
@@ -184,7 +198,7 @@
             // 
             this.txtSubject.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSubject.Location = new System.Drawing.Point(119, 93);
+            this.txtSubject.Location = new System.Drawing.Point(119, 110);
             this.txtSubject.MaxLength = 100;
             this.txtSubject.Name = "txtSubject";
             this.txtSubject.Size = new System.Drawing.Size(433, 21);
@@ -194,7 +208,7 @@
             // 
             this.btnSubmit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSubmit.Enabled = false;
-            this.btnSubmit.Location = new System.Drawing.Point(480, 457);
+            this.btnSubmit.Location = new System.Drawing.Point(480, 516);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(75, 23);
             this.btnSubmit.TabIndex = 7;
@@ -208,7 +222,7 @@
             this.chkDoNotPublish.AutoSize = true;
             this.chkDoNotPublish.BackColor = System.Drawing.Color.Transparent;
             this.chkDoNotPublish.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkDoNotPublish.Location = new System.Drawing.Point(49, 442);
+            this.chkDoNotPublish.Location = new System.Drawing.Point(49, 501);
             this.chkDoNotPublish.Name = "chkDoNotPublish";
             this.chkDoNotPublish.Size = new System.Drawing.Size(142, 17);
             this.chkDoNotPublish.TabIndex = 6;
@@ -225,7 +239,7 @@
             this.lblSubmitting.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblSubmitting.AutoSize = true;
             this.lblSubmitting.BackColor = System.Drawing.Color.Transparent;
-            this.lblSubmitting.Location = new System.Drawing.Point(405, 462);
+            this.lblSubmitting.Location = new System.Drawing.Point(405, 521);
             this.lblSubmitting.Name = "lblSubmitting";
             this.lblSubmitting.Size = new System.Drawing.Size(69, 13);
             this.lblSubmitting.TabIndex = 8;
@@ -233,17 +247,22 @@
             this.lblSubmitting.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.lblSubmitting.Visible = false;
             // 
-            // lblDoNotPublish
+            // lnkCurio
             // 
-            lblDoNotPublish.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            lblDoNotPublish.BackColor = System.Drawing.Color.Transparent;
-            lblDoNotPublish.Font = new System.Drawing.Font("Tahoma", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            lblDoNotPublish.Location = new System.Drawing.Point(66, 457);
-            lblDoNotPublish.Name = "lblDoNotPublish";
-            lblDoNotPublish.Size = new System.Drawing.Size(310, 39);
-            lblDoNotPublish.TabIndex = 9;
-            lblDoNotPublish.Text = resources.GetString("lblDoNotPublish.Text");
+            lnkCurio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            lnkCurio.AutoSize = true;
+            lnkCurio.BackColor = System.Drawing.Color.Transparent;
+            lnkCurio.ForeColor = System.Drawing.Color.DarkRed;
+            lnkCurio.LinkArea = new System.Windows.Forms.LinkArea(5, 8);
+            lnkCurio.Location = new System.Drawing.Point(381, 32);
+            lnkCurio.Name = "lnkCurio";
+            lnkCurio.Size = new System.Drawing.Size(172, 18);
+            lnkCurio.TabIndex = 10;
+            lnkCurio.TabStop = true;
+            lnkCurio.Text = "...a DevCurio sponsored by Inedo";
+            lnkCurio.UseCompatibleTextRendering = true;
+            lnkCurio.VisitedLinkColor = System.Drawing.Color.Blue;
+            lnkCurio.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkCurio_LinkClicked);
             // 
             // SubmitForm
             // 
@@ -251,7 +270,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::SubmitToWTF.Properties.Resources.WoodenTable;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(596, 526);
+            this.ClientSize = new System.Drawing.Size(596, 585);
+            this.Controls.Add(lnkCurio);
             this.Controls.Add(lblDoNotPublish);
             this.Controls.Add(this.lblSubmitting);
             this.Controls.Add(splitContainer1);

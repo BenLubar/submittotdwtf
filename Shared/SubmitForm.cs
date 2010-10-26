@@ -147,7 +147,7 @@ namespace SubmitToWTF
         {
             Process.Start(new ProcessStartInfo
             {
-                FileName = "http://inedo.com/Downloads/",
+                FileName = "http://inedo.com/Downloads/DevCurios/?utm_source=devcurio&utm_medium=vs&utm_campaign=wtf",
                 UseShellExecute = true
             });
         }

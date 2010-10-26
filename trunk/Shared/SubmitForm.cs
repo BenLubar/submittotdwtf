@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
@@ -136,6 +137,19 @@ namespace SubmitToWTF
                 && IsPossiblyEmailAddress(this.txtEmail.Text);
 
             this.btnSubmit.Enabled = valid;
+        }
+        /// <summary>
+        /// Handles the LinkClicked event of the lnkCurio control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="System.Windows.Forms.LinkLabelLinkClickedEventArgs"/> instance containing the event data.</param>
+        private void lnkCurio_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start(new ProcessStartInfo
+            {
+                FileName = "http://inedo.com/Downloads/",
+                UseShellExecute = true
+            });
         }
 
         /// <summary>
